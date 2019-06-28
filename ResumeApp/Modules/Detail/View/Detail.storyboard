@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="KWc-PX-cxb">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="Y0O-nA-4FV" customClass="DetailViewController" customModule="ResumeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="SectionDetailController" id="bZz-tg-OQO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvH-a2-ig1">
+                                <rect key="frame" x="160" y="36" width="0.0" height="0.0"/>
+                                <accessibility key="accessibilityConfiguration" hint="TitleLabel" identifier="TitleLabel" label="TitleLabel">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAQ-3J-yNL">
+                                <rect key="frame" x="30" y="44" width="260" height="335"/>
+                                <accessibility key="accessibilityConfiguration" label="Summary"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wAQ-3J-yNL" secondAttribute="height" multiplier="260:177" constant="-232.09039548022599" id="etP-KT-LEr"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wAQ-3J-yNL" firstAttribute="top" secondItem="bvH-a2-ig1" secondAttribute="bottom" constant="8" id="6RS-89-9vl"/>
+                            <constraint firstItem="wAQ-3J-yNL" firstAttribute="leading" secondItem="gGS-5W-bfD" secondAttribute="leading" constant="30" id="6qy-Fb-W0j"/>
+                            <constraint firstItem="gGS-5W-bfD" firstAttribute="trailing" secondItem="wAQ-3J-yNL" secondAttribute="trailing" constant="30" id="Jgb-if-xpI"/>
+                            <constraint firstItem="bvH-a2-ig1" firstAttribute="top" secondItem="gGS-5W-bfD" secondAttribute="top" constant="16" id="PzD-FG-MQF"/>
+                            <constraint firstItem="bvH-a2-ig1" firstAttribute="centerX" secondItem="bZz-tg-OQO" secondAttribute="centerX" id="vRe-dR-QD3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gGS-5W-bfD"/>
+                    </view>
+                    <connections>
+                        <outlet property="summary" destination="wAQ-3J-yNL" id="oSJ-pE-y0G"/>
+                        <outlet property="titleLabel" destination="bvH-a2-ig1" id="E8N-6m-tJ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wlW-98-y2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1723" y="20"/>
+        </scene>
+    </scenes>
+</document>

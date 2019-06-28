@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Experience Detail View Controller-->
+        <scene sceneID="n2F-FZ-NyY">
+            <objects>
+                <viewController storyboardIdentifier="ExperienceDetailViewController" id="ege-vy-Oed" customClass="ExperienceDetailViewController" customModule="ResumeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rxz-J6-VAk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ol4-em-Jvg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="WorkCell" id="Yx4-6V-Zq3" customClass="WorkCell" customModule="ResumeApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yx4-6V-Zq3" id="iIN-N6-qwc">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.32941176470588235" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ol4-em-Jvg" firstAttribute="leading" secondItem="X4x-xK-Jfn" secondAttribute="leading" id="4jO-cp-fOj"/>
+                            <constraint firstItem="X4x-xK-Jfn" firstAttribute="bottom" secondItem="Ol4-em-Jvg" secondAttribute="bottom" id="TDQ-G7-uJA"/>
+                            <constraint firstItem="Ol4-em-Jvg" firstAttribute="top" secondItem="X4x-xK-Jfn" secondAttribute="top" id="aOk-Ke-SzT"/>
+                            <constraint firstItem="X4x-xK-Jfn" firstAttribute="trailing" secondItem="Ol4-em-Jvg" secondAttribute="trailing" id="wOH-Ur-03w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X4x-xK-Jfn"/>
+                    </view>
+                    <connections>
+                        <outlet property="workPlacesTable" destination="Ol4-em-Jvg" id="a85-SO-vbS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ipX-oq-31J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829" y="596"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  ResumeApp
+
+  Created by Oliver Jordy Perez Escamilla on 6/19/19.
+  Copyright © 2019 OliverPérez. All rights reserved.
+*/
+
+"Profile" = "Perfil";
+"Error" = "Error";
+"ErrorDescription" = "No se pudo descargar el perfil";
+"Ok" = "Entendido";

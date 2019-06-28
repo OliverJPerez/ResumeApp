@@ -1,0 +1,114 @@
+{
+  "summary": "This guy is an iOS Jr Adv developer with 1 year experience, both for personal and professional projects.",
+  "profilePicURL":"https://i.ibb.co/Chd07QJ/72k-YGbh5-400x400.jpg",
+  "sections": [
+  {
+    "title": "About",
+    "summary": "Oliver Has 1 year experience developing iOS apps both for personal and professional projects. He worked as iOS Developer Jr at PagaTodo in the app Ya Ganaste and “YaBaaS” using VIPER architecture, Swift 3 and 4, Storyboards, XIBs, programmatic views, consuming REST APIs, using git-flow workflow and Jira."
+  },
+     {
+    "title": "Experience",
+    "workPlaces": [
+      {
+        "name": "Inoma A.C.",
+        "description": "Oliver worked 2 years developing educational videogames using Unity 3D and C#."
+      }
+      { "name": "PagaTodo",
+        "description": "Oliver worked 3 months as iOS Developer Jr in the payments module for the app YaGanaste and the internal project YaBaas."
+      }
+    ]
+  },
+   {
+    "title": "Hard Skills",
+    "skills": [
+        {
+            "name": "Swift",
+            "score": 5
+        }, 
+        {
+            "name": "Objective C",
+            "score": 2
+        },
+        {
+            "name": "CoreData",
+            "score": 3
+        },
+        {
+            "name": "CoreLocation",
+            "score": 4
+        },
+        {
+          "name": "ArKit",
+          "score": 4
+        },
+        {
+          "name": "CoreML",
+          "score": 3
+        },
+        {
+          "name": "Postman",
+          "score": 4
+         },
+        {
+            "name": "Networking",
+            "score": 4
+        },
+        {
+            "name": "Coordinator Pattern",
+            "score": 4
+        },
+        {
+            "name": "VIPER",
+            "score": 3
+        },
+        {
+            "name": "Unit Testing",
+            "score": 3
+        },
+        {
+            "name": "UI Testing",
+            "score": 3
+        },
+        {
+            "name": "TDD",
+            "score": 3
+        },
+        {
+            "name": "Git",
+            "score": 5
+        }
+        ]
+  }, {
+    "title": "Soft Skills",
+    "skills": [
+        {
+            "name": "Comunication",
+            "score": 4
+        },
+        {
+            "name": "Team work",
+            "score": 5
+        },
+        {
+            "name": "Autodidact",
+            "score": 5
+        },
+        {
+            "name": "Persistent",
+            "score": 5
+        },
+        {
+            "name": "Goal oriented",
+            "score": 5
+        },
+        {
+            "name": "Punctual",
+            "score": 5
+        }
+        ]
+  },{
+    "title": "Hobbies",
+    "summary": "I love to play the piano and the guitar, mostly classical music and also my own compositions. Also, I really like to ride my bike around the city."
+  }
+  ]
+}

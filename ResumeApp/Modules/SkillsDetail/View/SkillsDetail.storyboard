@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Skills Detail View Controller-->
+        <scene sceneID="r0V-Wv-ij1">
+            <objects>
+                <viewController storyboardIdentifier="SkillsDetailViewController" id="lNz-vE-SVe" customClass="SkillsDetailViewController" customModule="ResumeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f79-ZR-Gjq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q4d-6X-ySI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SkillCell" id="Wux-VT-cHD" customClass="SkillCell" customModule="ResumeApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wux-VT-cHD" id="Co2-e2-OC1">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="700" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Db-Bm-lw2">
+                                                    <rect key="frame" x="28" y="22" width="256" height="0.0"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="eCd-JZ-Ldr">
+                                                    <rect key="frame" x="284" y="13" width="114" height="18"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T8V-G8-3U3">
+                                                            <rect key="frame" x="0.0" y="0.0" width="18" height="18"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="18" id="jEl-jJ-Ly7"/>
+                                                                <constraint firstAttribute="width" constant="18" id="ou1-MU-npi"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qzu-he-fbp">
+                                                            <rect key="frame" x="24" y="0.0" width="18" height="18"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IMa-Mx-Y1M">
+                                                            <rect key="frame" x="48" y="0.0" width="18" height="18"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kNg-qW-dGT">
+                                                            <rect key="frame" x="72" y="0.0" width="18" height="18"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JTy-AR-iHI">
+                                                            <rect key="frame" x="96" y="0.0" width="18" height="18"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="kNg-qW-dGT" firstAttribute="height" secondItem="JTy-AR-iHI" secondAttribute="height" id="Bhb-KL-ivt"/>
+                                                        <constraint firstItem="T8V-G8-3U3" firstAttribute="height" secondItem="qzu-he-fbp" secondAttribute="height" id="GML-Qm-aiA"/>
+                                                        <constraint firstItem="qzu-he-fbp" firstAttribute="height" secondItem="IMa-Mx-Y1M" secondAttribute="height" id="NrS-xc-Mox"/>
+                                                        <constraint firstItem="qzu-he-fbp" firstAttribute="width" secondItem="IMa-Mx-Y1M" secondAttribute="width" id="OJe-V2-iK3"/>
+                                                        <constraint firstItem="kNg-qW-dGT" firstAttribute="width" secondItem="JTy-AR-iHI" secondAttribute="width" id="RNx-nC-64B"/>
+                                                        <constraint firstItem="IMa-Mx-Y1M" firstAttribute="height" secondItem="kNg-qW-dGT" secondAttribute="height" id="XhB-gL-JKp"/>
+                                                        <constraint firstItem="T8V-G8-3U3" firstAttribute="width" secondItem="qzu-he-fbp" secondAttribute="width" id="ggY-Sa-KCQ"/>
+                                                        <constraint firstItem="IMa-Mx-Y1M" firstAttribute="width" secondItem="kNg-qW-dGT" secondAttribute="width" id="pM4-yu-b3q"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="T8V-G8-3U3" firstAttribute="leading" secondItem="9Db-Bm-lw2" secondAttribute="trailing" id="1Oz-M6-s0X"/>
+                                                <constraint firstItem="9Db-Bm-lw2" firstAttribute="leading" secondItem="Co2-e2-OC1" secondAttribute="leadingMargin" constant="8" id="IY3-98-WY2"/>
+                                                <constraint firstAttribute="trailing" secondItem="eCd-JZ-Ldr" secondAttribute="trailing" constant="16" id="YYS-Fn-Mdo"/>
+                                                <constraint firstItem="eCd-JZ-Ldr" firstAttribute="centerY" secondItem="Co2-e2-OC1" secondAttribute="centerY" id="jDx-Xv-IuT"/>
+                                                <constraint firstItem="9Db-Bm-lw2" firstAttribute="centerY" secondItem="Co2-e2-OC1" secondAttribute="centerY" id="rlm-1g-89Z"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="skillName" destination="9Db-Bm-lw2" id="3Q4-UG-eiw"/>
+                                            <outlet property="star1" destination="T8V-G8-3U3" id="qrc-fw-lLh"/>
+                                            <outlet property="star2" destination="qzu-he-fbp" id="Duw-Rz-gFl"/>
+                                            <outlet property="star3" destination="IMa-Mx-Y1M" id="D0H-oD-6tj"/>
+                                            <outlet property="star4" destination="kNg-qW-dGT" id="dX3-Xb-tmD"/>
+                                            <outlet property="star5" destination="JTy-AR-iHI" id="cmS-M8-MBt"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.32941176470588235" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cWl-Ij-p0n" firstAttribute="bottom" secondItem="q4d-6X-ySI" secondAttribute="bottom" id="7Vg-2o-ixG"/>
+                            <constraint firstItem="cWl-Ij-p0n" firstAttribute="trailing" secondItem="q4d-6X-ySI" secondAttribute="trailing" id="TJY-mM-1Cu"/>
+                            <constraint firstItem="q4d-6X-ySI" firstAttribute="leading" secondItem="cWl-Ij-p0n" secondAttribute="leading" id="evI-uK-ICx"/>
+                            <constraint firstItem="q4d-6X-ySI" firstAttribute="top" secondItem="cWl-Ij-p0n" secondAttribute="top" id="tIe-tb-MbC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cWl-Ij-p0n"/>
+                    </view>
+                    <connections>
+                        <outlet property="skillsTable" destination="q4d-6X-ySI" id="ZHY-3E-iBb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XOd-GG-fqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143" y="596"/>
+        </scene>
+    </scenes>
+</document>

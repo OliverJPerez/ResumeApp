@@ -1,0 +1,10 @@
+//
+//  ResumeAppConfiguration.xcconfig
+//  ResumeApp
+//
+//  Created by Oliver Jordy Perez Escamilla on 6/27/19.
+//  Copyright © 2019 OliverPérez. All rights reserved.
+//
+
+SIMPLE_SLASH=/
+RESUME_PROFILE_URL = https:$(SIMPLE_SLASH)/gist.githubusercontent.com/OliverJPerez/cd1ca8e93bbabbaa1597bfdd7d8d06b6/raw/e99c64364d26f2b3dc99741a1c77468253056839/oliverperez.json
